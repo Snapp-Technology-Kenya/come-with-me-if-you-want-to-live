@@ -1,0 +1,20 @@
+workflow_steps:
+  1: "Read the top level instructions/specifications again."
+  2: "Read the next incomplete task/subtask. As soon as you find the next incomplete task, write it as the top level todo in your managed todo list and discard the rest of the task list."
+  3: "Break down the task into small, manageable steps in your managed todo list, including the workflow steps above."
+  4: "For each step in your managed todo list, perform the step and check that it works before moving to the next step in your list (you may not advance to the next task step without explicit permission)"
+  5:
+    description: "Break down the task into a series of small steps, adding the following steps as a minimum"
+    sub_steps:
+      1: "Create a branch"
+      2: "Create any missing folders"
+      3: "Add meaninful specs and AGENTS.MD files if they are missing and ensure that they are referenced by higher-level specifications and agents"
+      4: "Seek approval for the created specs and agents, and the tasks"
+      5: "Add the build and dev tooling config, makefiles, dockerfiles, etc. as per the specifications"
+      6: "Add a tasks.md folder to the specs to keep track of any long-running tasks"
+      7: "Implement the tasks as per the higher-level specification tree and the newly created specs"
+      8: "Test at each step that the step was successful"
+      9: "Seek approval for each completed step"
+      10: "Update the task list to indicate that the work was completed, adding new subsequent tasks as needed"
+  6: "You may not proceed to the next task/subtask without approval."
+  7: "You must stage and commit your changes with an appropriate standards based commit message"

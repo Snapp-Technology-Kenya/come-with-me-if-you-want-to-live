@@ -1,0 +1,48 @@
+# Spec Workflow Files
+.spec-workflow/specs/*
+.spec-workflow/approvals/*
+.spec-workflow/archive/*
+!.spec-workflow/specs/.gitkeep
+!.spec-workflow/approvals/.gitkeep
+!.spec-workflow/archive/.gitkeep
+
+# Node modules
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+**/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+**/logs/
+
+# Test coverage
+coverage/
+**/coverage/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
