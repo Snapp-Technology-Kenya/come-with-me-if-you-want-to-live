@@ -2,9 +2,9 @@
 spec_order: 4
 required: true
 preceded_by:
-  - specification/00 - Specification.md
-  - specification/01 - Architecture.md
-  - specification/02 - Coding Standards.md
+  - @specification/02 - Coding Standards.md
+followed_by:
+  - specification/04 - Tasks.md
 ---
 
 

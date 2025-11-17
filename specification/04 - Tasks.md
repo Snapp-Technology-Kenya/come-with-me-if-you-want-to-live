@@ -2,10 +2,9 @@
   spec_order: 5
   required: true
   preceeded_by:
-    - specification/03 - Processes.md
+    - @specification/03 - Processes.md
   references:
     - @specification/spec-index.yaml
-    - @specification/workflow.yaml
 
   ---
 
