@@ -42,5 +42,3 @@ specs:
     order: 4
     required: true
     summary: "Ordered project task list. Read after 03."
-
-  # Add any other top-level spec files here following the same format.
