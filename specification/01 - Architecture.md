@@ -151,7 +151,7 @@ We follow a gitflow process with no human access to production servers, so full 
 
 ## Models
 - Use PlantUML to model system. Read models before changes; update diagrams to document changes. 
-- There must be a `models` folder in each layer of the stack containing at least a `main.puml` file with a component diagram as an overview of the layer.
+- There must be a `models` folder in each layer of the stack containing at least a `main.puml` file (named for its context rather than simply 'main') with a component diagram as an overview of the layer.
 
 # REFERENCES
 
