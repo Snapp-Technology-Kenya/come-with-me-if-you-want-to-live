@@ -27,11 +27,17 @@ We follow a gitflow process with no human access to production servers, so full 
 |   ├── AGENTS.MD 
 |   └── makefile 
 ├── platform/
+|   ├── scripts/ 
 |   ├── specification/
 |   |   ├── model/ 
-|   ├── services/ 
+|   ├── services/
+|   |   ├── cert-manager/
+|   |   ├── redpanda/
+|   |   ├── istio/
+|   |   ├── postgres/
 |   ├── AGENTS.MD 
 |   └── makefile 
+|   └── kustomize.yaml 
 ├─ application/
 |   ├── specification/
 |   |   ├── model/ 
@@ -39,7 +45,7 @@ We follow a gitflow process with no human access to production servers, so full 
 |   |   ├── api/
 |   |   |   ├── chat/ 
 |   |   |   ├── payments/ 
-|   |   |   ├── users/ 
+|   |   |   ├── users/
 |   |   ├── auth/ 
 |   |   ├── admin/
 |   ├── AGENTS.MD 
@@ -51,8 +57,10 @@ We follow a gitflow process with no human access to production servers, so full 
 |   ├── specification/
 |   |   ├── model/ 
 |   ├── scripts/ 
+|   ├── src/ 
 |   ├── AGENTS.MD 
 |   └── makefile 
+|   └── package.json 
 ```
 
 The services folder contains the domain driven components of the server. Each service gets a readme and an AGENTS.MD file, a spec folder and a model folder, along with a makefile and a tekton task definition yaml file.
