@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: application-build-run
+spec:
+  pipelineRef:
+    name: application-build
+  params:
+    - name: git-url
+      value: https://example.com/repo.git

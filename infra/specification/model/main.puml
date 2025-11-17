@@ -1,0 +1,11 @@
+@startuml InfraLayerOverview
+title Infra Layer Overview
+
+package "Infra" {
+  note as N1
+    Bootstrap Kubernetes (k3d), networking, and shared platform primitives.
+    Update this diagram as components are implemented.
+  end note
+}
+
+@enduml

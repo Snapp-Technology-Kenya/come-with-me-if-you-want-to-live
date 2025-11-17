@@ -1,0 +1,17 @@
+@startuml PlatformLayer
+package "Platform Services" {
+  [Cert-Manager]
+  [Tekton]
+  [Istio]
+  [Postgres]
+  [Redpanda]
+}
+
+[Application Layer]
+
+[Cert-Manager] --> [Istio]
+[Tekton] --> [Application Layer]
+[Postgres] --> [Application Layer]
+[Redpanda] --> [Application Layer]
+
+@enduml

@@ -1,0 +1,13 @@
+{
+    "name": "tree-surgery-chatbot-ui",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "bun run dev",
+        "build": "bun run build",
+        "lint": "bun run lint",
+        "test": "bun run test"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+}

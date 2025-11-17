@@ -1,0 +1,23 @@
+apiVersion: k3d.io/v1alpha5
+kind: Simple
+metadata:
+  name: tree-chatbot
+servers: 1
+agents: 2
+token: devtoken
+kubeAPI:
+  hostPort: "6550"
+ports:
+  - port: 8080:80
+    nodeFilters:
+      - loadbalancer
+registries:
+  create:
+    name: tree-local-reg
+    host: 0.0.0.0
+    hostPort: "5050"
+options:
+  k3s:
+    extraArgs:
+      - nodeArgs:
+          - "--disable=traefik"

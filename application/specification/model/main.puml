@@ -1,0 +1,16 @@
+@startuml ApplicationLayer
+title Application Layer Overview
+
+package "Application Services" {
+  [Admin Service]
+  [Auth Service]
+  [API Gateway]
+}
+
+package "API Gateway" {
+  [Chat API]
+  [Payments API]
+  [Users API]
+}
+
+@enduml

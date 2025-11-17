@@ -18,9 +18,9 @@
 
   # Main Task list
 
-  1. [ ] - Set up dev environment
-    1. [ ] Create folders
-    2. [ ] Add dummy files to empty folders
+   1. [x] - Set up dev environment
+     1. [x] Create folders
+     2. [x] Add dummy files to empty folders
 
   2. [ ] - Create infra 
       1. [ ] - Write k3d config

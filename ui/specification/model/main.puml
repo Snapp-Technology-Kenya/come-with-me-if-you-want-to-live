@@ -1,0 +1,17 @@
+@startuml UILayer
+
+skinparam componentStyle rectangle
+
+package "UI" {
+  [React SPA]
+  [TanStack Router]
+  [ShadCN/UI]
+}
+
+[Application Layer]
+
+[React SPA] --> [Application Layer]
+[TanStack Router] --> [React SPA]
+[ShadCN/UI] --> [React SPA]
+
+@enduml

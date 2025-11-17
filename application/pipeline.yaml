@@ -1,0 +1,11 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: application-build
+spec:
+  description: Placeholder pipeline for building the application layer
+  params:
+    - name: git-url
+      type: string
+      description: Repository URL
+  tasks: []
