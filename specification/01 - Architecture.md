@@ -21,20 +21,20 @@ We follow a gitflow process with no human access to production servers, so full 
 ```
 ├── infra/ 
 |   ├── specification/
-|   ├── model/ 
+|   |   ├── model/ 
 |   ├── scripts/ 
 |   ├── k3d-config.yaml 
 |   ├── AGENTS.MD 
 |   └── makefile 
 ├── platform/
 |   ├── specification/
-|   ├── model/ 
+|   |   ├── model/ 
 |   ├── services/ 
 |   ├── AGENTS.MD 
 |   └── makefile 
 ├─ application/
 |   ├── specification/
-|   ├── model/ 
+|   |   ├── model/ 
 |   ├── services/ 
 |   |   ├── api/
 |   |   |   ├── chat/ 
@@ -49,7 +49,7 @@ We follow a gitflow process with no human access to production servers, so full 
 |   └── makefile 
 ├── ui/
 |   ├── specification/
-|   ├── model/ 
+|   |   ├── model/ 
 |   ├── scripts/ 
 |   ├── AGENTS.MD 
 |   └── makefile 
