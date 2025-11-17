@@ -1,0 +1,1 @@
+# Notes written and maintained by the copilot coding agent

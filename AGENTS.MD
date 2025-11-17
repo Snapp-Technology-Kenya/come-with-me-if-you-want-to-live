@@ -23,38 +23,40 @@ We are building a chatbot for adult students of small business administration in
 
 # TOOLING
 
-You have access to various mcp servers and tools to help you work. Use them extensively. Mostly prefer using toolsing over the terminal, unless you are working on a bulk action (like searching the workspace for instances of a symbol, a task better performed with grep).
+You have access to various mcp servers and tools to help you work. Use them extensively. Do not use the terminal where an equivalent tool is available, unless you are working on a bulk action (like searching the workspace for instances of a symbol in a set of files, a task better performed with grep).
 
-# CONTEXT LENGTH
+## MINIMISE TOOL USAGE
 
-Try to maintain a shorter context length throught the judicious use of the terminal. For example, rather than checking each `*.sh` file one at a time to see if the hashbang is correct, use a grep command to find all shell scripts that don't have the correct hashbang.
+Where possible, use tools that can perform bulk actions rather than single-file actions. If you're reading one file, use a tool, if you're parsing a hundred files looking for a pattern, use the terminal.
+
+E.g: rather than using a tool to check each `*.sh` file one at a time to see if the hashbang is correct, use a find/grep command to find all shell scripts that don't have the correct hashbang. 
 
 # TASKS
 
-There must be a task list for each component. Maintain it with approvals for significant changes (anything more than fixing typos)
+- There is a task list markdown file for each component. 
+- Maintain them as you work.
+- Only work on one task list at a time.
+- Occasionally you'll be asked to do something not on a task list. In this case, create a new task list for the work, and get it approved before proceeding.
+
+# MEMORY
+
+- There is a `Notes.md` file in the root specification folder. Use it to keep track of important information you need to remember across sessions. 
+- Do not rely on session memory alone (it is regularly purged).
 
 # WORKFLOW
 
-Follow the machine readible workflow in `specification/workflow.yaml`.
+- Follow the machine readible workflow in `specification/workflow.yaml`.
 
-**SUMMARIZATION INSTRUCTIONS** 
+# **SUMMARIZATION/COMPACTION INSTRUCTIONS** 
 
-Do not remove details. You can summarize my direct input in the chat window, but all the specification details are pre-summarized and cannot be reduced any further without breaking things. Do not summarize specifications, agent instructions, task lists, or code. All instructions and specs must be kept fully intact without any changes whatsoever. !!IMPORTANT!!
+- After compaction/summarization, read the specification again.
 
 # SPECIFICATION REFERENCES
 
-Read the top level specification files in this order
-
-@specification/00 - Specification.md
-@specification/01 - Architecture.md
-@specification/02 - Coding Standards.md
-@specification/03 - Processes.md
-@specification/04 - Tasks.md
-
-Each specification contains references to the other specifications as needed. Follow all references as demanded - do not decide for yourself what is needed and what isn't.
-
-For each nested subproject, read the specification files in numbered order.
+- You must start each session by reading the specifications in the order given by `./specification/spec-index.yaml`. 
+- You must read all specifications relevant to your task before starting work.
+- Specifications are decomposed hierarchically throughout the codebase. Read all the specs in the path to the section you are working on in the monorepo, and ignore specs that are not in the path to your task.
 
 # MANAGED TODO LISTS
 
-Do not create a managed todo list until you have read the specifications referenced above and in `./specification/spec-index.yaml`
+- Do not create a managed todo list until you have read the specifications referenced in `./specification/spec-index.yaml`

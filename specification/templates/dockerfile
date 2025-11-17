@@ -1,0 +1,13 @@
+from cake/bun
+
+workdir /api
+
+copy src ./
+copy package.json ./
+copy bun.lockb ./
+
+run bun install
+
+cmd ["bun", "run", "start"]
+
+expose 80
