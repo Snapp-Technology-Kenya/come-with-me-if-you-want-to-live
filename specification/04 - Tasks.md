@@ -10,12 +10,10 @@
 
   # Task list for project development.
 
-  - Tasks are in priority order
+  - **Start by reading the full top-level specification in the specification folder**
+- Tasks are in priority order
   - The workflow for taking a task from this list is in AGENTS.MD
-  - You may not read the task list without first reading all the top level specification files 00-03 in the specification folder in order.
-
-  **Start by reading the full top-level specification in the specification folder**
-
+  
   # Main Task list
 
   1. [ ] - Create infra 
