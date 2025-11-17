@@ -37,16 +37,3 @@ followed_by:
 - After each subtask, ask me if I want the files committed, then stage the files and commit them accordingly (using your tools)
 - No task is complete until it is tested, working, documented, marked as complete, and committed.
 
-# Kubernetes
-
-- Use kubectl for imperative work, but prefer kustomize for all delcarative work
-- Do not change things imperatively - always use yaml files and kustomize
-
-
-# REFERENCES
-
-@specification/00 - Specification.md
-@specification/01 - Architecture.md
-@specification/02 - Coding Standards.md
-@specification/03 - Processes.md
-@specification/04 - Tasks.md
