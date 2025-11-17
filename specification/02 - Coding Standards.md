@@ -1,5 +1,5 @@
 ---
-spec_order: 3
+spec_order: 2
 required: true
 preceded_by:
   - @specification/01 - Architecture.md

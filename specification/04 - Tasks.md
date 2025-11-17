@@ -1,18 +1,19 @@
-  ---
-  spec_order: 5
-  required: true
-  preceeded_by:
-    - @specification/03 - Processes.md
-  references:
-    - @specification/spec-index.yaml
+---
+spec_order: 4
+required: true
+preceeded_by:
+  - @specification/03 - Processes.md
+references:
+  - @specification/spec-index.yaml
 
-  ---
+---
 
-  # Task list for project development.
+# Task list for project development.
 
-  - **Start by reading the full top-level specification in the specification folder**
+- **Start by reading the full top-level specification in the specification folder**
 - Tasks are in priority order
-  - The workflow for taking a task from this list is in AGENTS.MD
+- Break down tasks into sub-tasks as needed
+- Only work on one task at a time
   
   # Main Task list
 

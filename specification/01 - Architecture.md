@@ -1,5 +1,5 @@
 ---
-spec_order: 2
+spec_order: 1
 required: true
 preceded_by:
   - @specification/00 - Specification.md
