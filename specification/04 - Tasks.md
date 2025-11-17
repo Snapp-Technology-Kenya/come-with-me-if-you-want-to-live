@@ -21,7 +21,6 @@
   1. [ ] - Set up dev environment
     1. [ ] Create folders
     2. [ ] Add dummy files to empty folders
-    3. [ ] Commit
 
   2. [ ] - Create infra 
       1. [ ] - Write k3d config
@@ -32,7 +31,7 @@
       1. [ ] - Create nested folders for each platform feature
       2. [ ] - Install cert-manager and tekton first, using kustomize
       3. [ ] - Write tekton pipeline for istio
-      4. [ ] - Write tekton pipeline for neon
+      4. [ ] - Write tekton pipeline for postgres
       5. [ ] - Write tekton pipeline for redpanda
 
   4. [ ] - Create Server/API components
