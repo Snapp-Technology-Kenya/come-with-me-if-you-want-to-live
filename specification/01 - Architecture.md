@@ -21,7 +21,13 @@ We follow a gitflow process with no human access to production servers, so full 
 ```
 ├── infra/ 
 |   ├── specification/
+|   |   ├── infra-spec.md
+|   |   ├── infra-architecture.md
+|   |   ├── infra-coding-standards.md
+|   |   ├── infra-processes.md
+|   |   ├── infra-tasks.md
 |   |   ├── model/ 
+|   |   |   ├── infra.puml
 |   ├── scripts/ 
 |   ├── k3d-config.yaml 
 |   ├── AGENTS.MD 
@@ -29,25 +35,89 @@ We follow a gitflow process with no human access to production servers, so full 
 ├── platform/
 |   ├── scripts/ 
 |   ├── specification/
+|   |   ├── platform-spec.md
+|   |   ├── platform-architecture.md
+|   |   ├── platform-coding-standards.md
+|   |   ├── platform-processes.md
+|   |   ├── platform-tasks.md
+|   |   ├── platform-notes.md
 |   |   ├── model/ 
-|   ├── services/
+|   |   |   ├── platform.puml
+|   ├── services/ # We don't need separate models for platform services as they're all standard components
 |   |   ├── cert-manager/
+|   |   |   ├── specification/. 
+|   |   |   |   ├── cert-manager-spec.md
+|   |   |   ├── kustomize.yaml
+|   |   |   ├── cert-manager.yaml
+|   |   |   ├── namespace.yaml
 |   |   ├── redpanda/
+|   |   |   ├── specification/
+|   |   |   |   ├── red-panda-spec.md
+|   |   |   ├── kustomize.yaml
+|   |   |   ├── kustomize.yaml
+|   |   |   ├── namespace.yaml
 |   |   ├── istio/
+|   |   |   ├── specification/
+|   |   |   |   ├── istio-spec.md
+|   |   |   ├── kustomize.yaml
+|   |   |   ├── istio.yaml
+|   |   |   ├── namespace.yaml
 |   |   ├── postgres/
+|   |   |   ├── specification/
+|   |   |   |   ├── postgres-spec.md
+|   |   |   ├── kustomize.yaml
+|   |   |   ├── postgres.yaml
+|   |   |   ├── namespace.yaml
 |   ├── AGENTS.MD 
 |   └── makefile 
 |   └── kustomize.yaml 
 ├─ application/
 |   ├── specification/
+|   |   ├── application-spec.md 
+|   |   ├── application-architecture.md 
+|   |   ├── application-coding-standards.md 
+|   |   ├── application-processes.md 
+|   |   ├── application-tasks.md
+|   |   ├── application-notes.md
 |   |   ├── model/ 
+|   |   |   ├── application.puml
 |   ├── services/ 
 |   |   ├── api/
 |   |   |   ├── chat/ 
+|   |   |   |   ├── specification/
+|   |   |   |   |   ├── chat-spec.md 
+|   |   |   |   ├── model/ 
+|   |   |   |   |   ├── chat.puml
+|   |   |   |   ├── src/ 
+|   |   |   |   ├── package.json 
 |   |   |   ├── payments/ 
+|   |   |   |   ├── specification/
+|   |   |   |   |   ├── payments-spec.md 
+|   |   |   |   ├── model/ 
+|   |   |   |   |   ├── payments.puml
+|   |   |   |   ├── src/ 
+|   |   |   |   ├── package.json 
 |   |   |   ├── users/
+|   |   |   |   ├── specification/
+|   |   |   |   |   ├── users-spec.md 
+|   |   |   |   ├── model/ 
+|   |   |   |   |   ├── users.puml
+|   |   |   |   ├── src/ 
+|   |   |   |   ├── package.json 
 |   |   ├── auth/ 
+|   |   |   ├── specification/
+|   |   |   |   ├── auth-spec.md 
+|   |   |   ├── model/ 
+|   |   |   |   ├── auth.puml
+|   |   |   ├── src/ 
+|   |   |   ├── package.json 
 |   |   ├── admin/
+|   |   |   ├── specification/
+|   |   |   |   ├── admin-spec.md 
+|   |   |   ├── model/ 
+|   |   |   |   ├── admin.puml
+|   |   |   ├── src/ 
+|   |   |   ├── package.json 
 |   ├── AGENTS.MD 
 |   ├── pipeline.yaml 
 |   ├── pipeline-run.yaml 
@@ -56,6 +126,13 @@ We follow a gitflow process with no human access to production servers, so full 
 ├── ui/
 |   ├── specification/
 |   |   ├── model/ 
+|   |   |   ├── ui.puml
+|   |   ├─- ui-spec.md
+|   |   ├─- ui-architecture.md
+|   |   ├─- ui-coding standards.md
+|   |   ├─- ui-processes.md
+|   |   ├─- ui-tasks.md
+|   |   ├─- ui-notes.md
 |   ├── scripts/ 
 |   ├── src/ 
 |   ├── AGENTS.MD 
@@ -63,7 +140,8 @@ We follow a gitflow process with no human access to production servers, so full 
 |   └── package.json 
 ```
 
-The services folder contains the domain driven components of the server. Each service gets a readme and an AGENTS.MD file, a spec folder and a model folder, along with a makefile and a tekton task definition yaml file.
+- These folders describe a pattern that should be followed for any new component added to the system.
+- The services folder contains the domain driven components of the server. Each service gets a readme and an AGENTS.MD file, a spec folder and a model folder, along with a makefile and a tekton task definition yaml file.
 
 ## Stacks
 - **Infra**: K3D (K8s)
